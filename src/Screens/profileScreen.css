@@ -1,0 +1,124 @@
+.profilescreen {
+  height: 100vh;
+  background-color: black;
+  color: #ffffff;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+
+}
+.profilescreen__body {
+    position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-shrink: inherit;
+  max-width: 80%;
+  align-items: center;
+  width: 450px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  padding: 1%;
+
+
+
+
+
+}
+/* .profilescreen__body::-webkit-scrollbar{
+    display: none;
+} */
+.profilescreen__body > h2 {
+  color: white;
+}
+.profilescreen__info{
+    display: flex;
+    flex-wrap: wrap;
+}
+.profilescreen__avatar {
+  height: 2em;
+
+  object-fit: fill;
+}
+.profilescreen__details{
+    flex-wrap: wrap;
+    flex: 1;
+    margin-left: 2%;
+  
+}
+.profilescreen__email{
+    /* width: 100%; */
+    font-size: 1rem;
+    font-weight: 400;
+    border-bottom: 1px solid #282c2d;
+    margin-bottom: 1%;
+    padding: 10px;
+    background-color: gray;
+    padding-left:1rem;
+}
+.profilescreen__signout{
+    padding: 10px;
+    font-size: 1rem;
+    width:100%;
+    color:white;
+    background-color: #e50914;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+.plans__header{
+    font-size: 1rem;
+    padding: 1%;
+    margin: 2%;
+    border-bottom:1px solid gray;
+}
+.plans__renewl{
+    font-size: 0.8rem;
+    padding-left: 0.5rem;
+    
+
+}
+.profilescreens__subscriptions{
+    margin: 1.5rem 0px;
+    padding-left: 1vh;
+    display: flex;   
+}
+.subplans{
+    flex: 1;
+}
+.subscription__button{
+    background-color: #e50914;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    width: max-content;
+    cursor: pointer;
+    border: none;
+}
+.subplans>h4{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.subplans>h5{
+    font-size: 1rem;
+    font-weight: 200;
+    color: gray;
+}
+.current{
+    background-color: gray;
+    padding: 0.5em 1.5rem;
+}
+.profilescreens__subscriptions >button:hover{
+    border: 2px solid gray;
+}
+.edit__profile{
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 3px;
+    border-bottom: 0.3px solid gray;
+}
+.profilescreen__info{
+    margin-top: 1em;
+}
