@@ -9,19 +9,20 @@ import {
 } from "firebase/auth";
 
 function SignupScreen() {
-  const navigate =useNavigate();
+  const navigate = useNavigate();
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
-  const signIn = (e) => {
+  const signIn = async (e) => {
     e.preventDefault();
-    const user = signInWithEmailAndPassword(
+    const user = await signInWithEmailAndPassword(
       auth,
       emailRef.current.value,
       passwordRef.current.value
     )
-      .then((e) => console.log(e))
+      .then((response) => console.log(response))
       .catch((err) => alert(err));
-    navigate("/")
+
+    user && navigate("/");
     console.log("the user is ", user);
   };
   const register = async (e) => {
@@ -32,10 +33,9 @@ function SignupScreen() {
       emailRef.current.value,
       passwordRef.current.value
     )
-
       .then((e) => console.log(e))
       .catch((err) => alert(err));
-      navigate("/")
+    navigate("/");
     console.log(user);
   };
 
@@ -61,7 +61,6 @@ function SignupScreen() {
         <h4>
           <span className="gray"> New to Netflix?</span>
           <span className="signuplink" onClick={register}>
-       
             Sign Up now
           </span>
         </h4>

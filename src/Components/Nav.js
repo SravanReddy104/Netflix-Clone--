@@ -9,7 +9,6 @@ function Nav() {
 
   const navigate = useNavigate();
 
-
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
@@ -18,9 +17,7 @@ function Nav() {
         setHandle(false);
       }
     });
-    // return ()=>{
-    //     window.removeEventListener("scroll");
-    // }
+   
   });
   return (
     <div className={`nav ${handle && "nav__scrol"}`}>
@@ -32,7 +29,7 @@ function Nav() {
         alt="Netflix"
       />
       <img
-         loading="lazy"
+        loading="lazy"
         className="nav__avatar"
         onClick={() => navigate("ProfileScreen")}
         src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"

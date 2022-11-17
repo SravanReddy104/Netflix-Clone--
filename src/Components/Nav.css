@@ -5,9 +5,7 @@
   justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 23px;
-
-
+    padding: 1.5em;
     transition-timing-function: ease-in;
     transition: all 0.5sec;
    
@@ -16,7 +14,6 @@
     position: absolute;
     left: 0;
     width: 5em;
-    /* height: 100px; */
     object-fit: fill;
     cursor: pointer;
 
@@ -27,13 +24,9 @@
     right: 60px;
     width:  30px;
     height: 30px;
-  
- 
     cursor: pointer;
     
 }
-.nav__scrol{
-    
-    background-color:#111 ;
-    
+.nav__scrol{ 
+    background-color:#111 ; 
 }

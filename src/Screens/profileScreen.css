@@ -8,11 +8,7 @@
 
 }
 .profilescreen__body {
-    position: absolute;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  flex-shrink: inherit;
+  position: absolute;
   max-width: 80%;
   align-items: center;
   width: 450px;
@@ -20,15 +16,7 @@
   top: 50%;
   transform: translate(-50%,-50%);
   padding: 1%;
-
-
-
-
-
 }
-/* .profilescreen__body::-webkit-scrollbar{
-    display: none;
-} */
 .profilescreen__body > h2 {
   color: white;
 }
@@ -38,7 +26,6 @@
 }
 .profilescreen__avatar {
   height: 2em;
-
   object-fit: fill;
 }
 .profilescreen__details{
@@ -48,7 +35,6 @@
   
 }
 .profilescreen__email{
-    /* width: 100%; */
     font-size: 1rem;
     font-weight: 400;
     border-bottom: 1px solid #282c2d;
